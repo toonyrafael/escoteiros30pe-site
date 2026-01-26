@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>30ª GEMAPE - Site Oficial</title>
     <style>
+      * {
+        box-sizing: border-box;
+      }
       /* Configurações da Imagem de Fundo */
       body {
         margin: 0;
@@ -22,18 +25,23 @@
       .overlay {
         background-color: rgba(0, 0, 0, 0.5);
         width: 100%;
-        min-height: 100vh;
+        height: 100vh; /* Força a altura a ser exatamente a da tela */
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 50px;
+        padding-top: 300px;
+        overflow: hidden; /* Remove barras de rolagem indesejadas */
       }
 
       /* Logo */
+      /* Posiciona a logo no canto inferior direito */
       .logo {
-        width: 200px; /* Ajuste o tamanho da sua logo aqui */
+        width: 150px; /* Reduzi um pouco para não pesar no canto */
         height: auto;
-        margin-bottom: 20px;
+        position: fixed; /* Fixa em relação à tela */
+        bottom: 20px; /* Distância do fundo */
+        right: 20px; /* Distância da direita */
+        z-index: 100; /* Garante que fique por cima de tudo */
       }
 
       h1 {
