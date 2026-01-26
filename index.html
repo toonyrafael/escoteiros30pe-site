@@ -1,9 +1,90 @@
-<html>
-<head>
-    <title>Alterado Teste</title>
-</head>
-<body>
-    <h1>Bem Vindos</h1>
-    Teste dos Primeiros Passos
-</body>
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>30ª GEMAPE - Site Oficial</title>
+    <style>
+      /* Configurações da Imagem de Fundo */
+      body {
+        margin: 0;
+        padding: 0;
+        background: url("img/fundo.JPG") no-repeat center center fixed;
+        background-size: cover;
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      /* Camada escura para o texto não sumir no fundo */
+      .overlay {
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+      }
+
+      /* Logo */
+      .logo {
+        width: 200px; /* Ajuste o tamanho da sua logo aqui */
+        height: auto;
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        color: white;
+        text-shadow: 2px 2px 4px #000;
+        text-align: center;
+      }
+
+      /* Menu de Botões */
+      .menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 30px;
+      }
+
+      .btn {
+        background-color: #2c3e50;
+        color: white;
+        padding: 15px 25px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: 0.3s;
+        border: 2px solid transparent;
+      }
+
+      .btn:hover {
+        background-color: #34495e;
+        border-color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="overlay">
+      <img src="img/logo.png" alt="Logo GEMAPE" class="logo" />
+
+      <h1>30ª GEMAPE</h1>
+
+      <div class="menu">
+        <a href="#" class="btn">HISTÓRICO</a>
+        <a href="#" class="btn">ATIVIDADES</a>
+        <a
+          href="https://photos.google.com/share/..."
+          target="_blank"
+          class="btn"
+          >ÁLBUM DE FOTOS</a
+        >
+        <a href="#" class="btn">CONTATO</a>
+      </div>
+    </div>
+  </body>
 </html>
