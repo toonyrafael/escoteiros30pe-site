@@ -1,0 +1,68 @@
+/* Tamanho e efeito do Brasão/Logo */
+.logo .logo-img {
+  height: 90px; /* Ajuste a altura conforme a sua imagem */
+  width: auto;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
+  display: block;
+}
+
+/* Efeito ao passar o mouse (Hover) */
+.logo:hover .logo-img {
+  transform: scale(1.08); /* Aumenta levemente em 8% */
+  filter: brightness(1.15); /* Aumenta o brilho sutilmente */
+}
+
+/* Efeito de clique (Active) */
+.logo:active .logo-img {
+  transform: scale(0.95); /* Leve sensação de botão sendo pressionado */
+}
+
+/* Garante que o header fique no topo e alinhado */
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+  align-items: center;
+  padding: 15px 40px;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+/* Estrutura do Menu */
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo dos Links */
+.nav-menu a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Estado com o Mouse em Cima: Texto e Linha Dourados */
+.nav-menu a:hover {
+  color: #ff751f;
+  border-bottom-color: #ff751f;
+}
+
+/* Opcional: Se quiser marcar a página atual onde o usuário está */
+.nav-menu a.active {
+  color: #ff751f; 
+  border-bottom-color:#ff751f; 
+}

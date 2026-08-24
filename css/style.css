@@ -1,0 +1,75 @@
+* {
+        box-sizing: border-box;
+      }
+      /* Configurações da Imagem de Fundo */
+      body {
+        margin: 0;
+        padding: 0;
+        background: url("../img/fundo.JPG") no-repeat center center fixed;
+        background-size: cover;
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      /* Camada escura para o texto não sumir no fundo */
+      .overlay {
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 100vh; /* Força a altura a ser exatamente a da tela */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 300px;
+        overflow: hidden; /* Remove barras de rolagem indesejadas */
+      }
+
+      /* Logo */
+      /* Posiciona a logo no canto inferior direito */
+      /*.logo {
+        /*width: 150px; /* Reduzi um pouco para não pesar no canto */
+        /*height: auto;
+        /*position: fixed; /* Fixa em relação à tela */
+        /*bottom: 20px; /* Distância do fundo */
+        /*right: 20px; /* Distância da direita */
+        /*z-index: 100; /* Garante que fique por cima de tudo */
+      /*} */
+
+      h1 {
+        color: red;
+        text-shadow: 2px 2px 4px #000;
+        text-align: center;
+      }
+      h2 {
+        color: white;
+        text-shadow: 1px 1px 3px #000;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      /* Menu de Botões */
+      .menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 30px;
+      }
+
+      .btn {
+        background-color: #2c3e50;
+        color: white;
+        padding: 15px 25px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: 0.3s;
+        border: 2px solid transparent;
+      }
+
+      .btn:hover {
+        background-color: #34495e;
+        border-color: #fff;
+      }
