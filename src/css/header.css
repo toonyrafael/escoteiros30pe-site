@@ -1,0 +1,134 @@
+/* NAVBAR PADRÃO (PÁGINAS INTERNAS - JÁ NASCE ESCURA) */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+  align-items: center;
+  padding: 6px 30px;
+  z-index: 1000;
+  background-color: #0a0b0e;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+/* LOGO COMPACTA */
+.logo .logo-img {
+  height: 50px;
+  width: auto;
+  display: block;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.logo:hover .logo-img {
+  transform: scale(1.05);
+  filter: brightness(1.15);
+}
+
+/* LINKS DO MENU (LINHA LARANJA) */
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+  color: #ff751f;
+  border-bottom-color: #ff751f;
+}
+
+/* =========================================
+   LOGOS INSTITUCIONAIS (RODAPÉ GLOBAL)
+   ========================================= */
+
+.partners-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin: 40px auto;
+  padding: 0 20px;
+  max-width: 1100px;
+  flex-wrap: wrap;
+}
+
+.partner-card {
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  border: 1px solid transparent;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 1. CARD ROXA (WORLD SCOUTING) */
+.partner-card.card-purple {
+  background: transparent !important;
+  padding: 0 !important;
+  box-shadow: none;
+}
+
+.partner-card.card-purple img {
+  height: 100%;
+  width: auto;
+  border-radius: 12px;
+  display: block;
+}
+
+.partner-card.card-purple:hover {
+  transform: translateY(-4px);
+  border-color: #ff751f;
+  box-shadow: 0 0 20px rgba(255, 117, 31, 0.5);
+}
+
+/* 2. CARDS BRANCOS */
+.partner-card.card-white {
+  background-color: #ffffff;
+  padding: 16px 28px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.partner-card.card-white img {
+  max-height: 48px;
+  width: auto;
+  object-fit: contain;
+}
+
+.partner-card.card-white:hover {
+  transform: translateY(-4px);
+  border-color: #ff751f;
+  box-shadow: 0 8px 20px rgba(255, 117, 31, 0.3);
+}
+
+/* 3. CARD CENTRAL EM DESTAQUE (ESCOTEIROS DO BRASIL) */
+.partner-card.card-featured {
+  height: 120px;
+  padding: 16px 35px;
+  border-width: 2px;
+}
+
+.partner-card.card-featured img {
+  max-height: 100px;
+}

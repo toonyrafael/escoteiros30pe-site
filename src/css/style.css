@@ -5,7 +5,7 @@
       body {
         margin: 0;
         padding: 0;
-        background: url("../img/fundo.JPG") no-repeat center center fixed;
+        background: url("../assets/imgs/fundo.JPG") no-repeat center center fixed;
         background-size: cover;
         font-family: Arial, sans-serif;
         display: flex;
@@ -25,17 +25,6 @@
         padding-top: 300px;
         overflow: hidden; /* Remove barras de rolagem indesejadas */
       }
-
-      /* Logo */
-      /* Posiciona a logo no canto inferior direito */
-      /*.logo {
-        /*width: 150px; /* Reduzi um pouco para não pesar no canto */
-        /*height: auto;
-        /*position: fixed; /* Fixa em relação à tela */
-        /*bottom: 20px; /* Distância do fundo */
-        /*right: 20px; /* Distância da direita */
-        /*z-index: 100; /* Garante que fique por cima de tudo */
-      /*} */
 
       h1 {
         color: red;
