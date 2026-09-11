@@ -1,0 +1,12 @@
+name: Deploy subdomínio
+
+on:
+  push:
+    branches: Projeto-extensionista-v2
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+    steps:
+      - name: Atualizar subdomínio
+        run: git -C /var/www/html2 pull origin Projeto-extensionista-v2

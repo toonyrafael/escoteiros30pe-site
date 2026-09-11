@@ -1,0 +1,12 @@
+name: Deploy site principal
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+    steps:
+      - name: Atualizar site principal
+        run: git -C /var/www/html/src pull origin main
