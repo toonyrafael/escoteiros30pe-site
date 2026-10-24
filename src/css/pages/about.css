@@ -92,6 +92,7 @@
   margin-top: -60px ; /* Ajuste este valor (ex: 10px, 15px, 20px) */
 }
 
+.image-quote-wrapper img,
 .quote-image {
   width: 100%;
   height: 700px;      /* Controla a altura da imagem */
