@@ -314,20 +314,3 @@ h2 {
   cursor: pointer;       /* Exibe a mãozinha de clique */
 }
 
-/* NOTA DISCRETA SOBRE A NOVA IDENTIDADE */
-.brand-note {
-  color: #a0a0a0; /* Cinza suave (tira o contraste excessivo do branco) */
-  font-size: 0.92rem; /* Tamanho menor que o texto comum */
-  font-weight: 400; /* Tirado o negrito para ficar leve */
-  font-style: italic; /* Dá o aspecto de nota/observação */
-  line-height: 1.6;
-  max-width: 650px; /* Mantém o texto em um bloco centralizado e elegante */
-  margin: 10px auto 35px auto; /* Afasta suavemente do título e da seção de baixo */
-}
-
-/* DESTAQUE APENAS NO NOME DA MARCA */
-.brand-note .highlight-brand {
-  color: #ff751f; /* Cor laranja da marca */
-  font-weight: 600;
-  font-style: normal;
-}
