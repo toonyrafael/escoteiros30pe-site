@@ -30,30 +30,6 @@ html, body {
   margin: 0 auto;
 }
 
-/* TEXTO DA SEÇÃO SOBRE */
-.about-text {
-  color: #e0e0e0;
-  font-size: 1.15rem;
-  line-height: 1.8;
-  max-width: 850px;
-  margin-top: 0;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px; /* Define o espaçamento entre cada parágrafo (ajuste entre 15px e 25px) */
-  text-align: justify;
-}
-
-/* LOGO DO GRUPO NA SEÇÃO SOBRE 
-.about-logo {
-  display: block;
-  max-width: 120px; /* Controle o tamanho da logo aqui (ex: 100px, 120px, 150px) */
-  height: auto;
-  margin: 0 auto 20px auto; /* Centraliza a imagem e dá 20px de espaço para o título */
-  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.5)); /* Sombra suave para destacar no fundo escuro */
-  transition: transform 0.3s ease;
-}
-*/
-
 /* Efeito suave ao passar o mouse (Opcional) */
 .about-logo:hover {
   transform: scale(1.05);
