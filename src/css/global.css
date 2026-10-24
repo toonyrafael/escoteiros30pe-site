@@ -23,54 +23,6 @@ html, body {
   max-width: 1100px;
 }
 
-/* TEXTO MELHOR ALINHADO E CONFORTÁVEL PARA LEITURA */
-.about-content {
-  text-align: justify; /* Melhora a leitura do bloco de texto */
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-/* Efeito suave ao passar o mouse (Opcional) */
-.about-logo:hover {
-  transform: scale(1.05);
-}
-
-.banner-wrapper,
-.image-quote-wrapper {
-  width: 100%;
-  max-width: 1200px;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  position: relative;
-  box-sizing: border-box;
-  margin-top: -60px !important; /* Ajuste este valor (ex: 10px, 15px, 20px) */
-}
-
-.quote-image {
-  width: 100%;
-  height: 700px;      /* Controla a altura da imagem */
-  object-fit: cover;  /* Mantém a foto na proporção correta sem esticar */
-  display: block;
-  border-radius: 4px; 
-}
-
-/* NOTA DISCRETA SOBRE A NOVA IDENTIDADE */
-.brand-note {
-  color: #a0a0a0; /* Cinza suave (tira o contraste excessivo do branco) */
-  font-size: 0.92rem; /* Tamanho menor que o texto comum */
-  font-weight: 400; /* Tirado o negrito para ficar leve */
-  font-style: italic; /* Dá o aspecto de nota/observação */
-  line-height: 1.6;
-  max-width: 650px; /* Mantém o texto em um bloco centralizado e elegante */
-  margin: 10px auto 35px auto; /* Afasta suavemente do título e da seção de baixo */
-}
-
-/* DESTAQUE APENAS NO NOME DA MARCA */
-.brand-note .highlight-brand {
-  color: #ff751f; /* Cor laranja da marca */
-  font-weight: 600;
-  font-style: normal;
-}
 
 
 
