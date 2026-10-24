@@ -1,0 +1,47 @@
+/* 1. REDUZIR O ESPAÇO ACIMA DO TÍTULO DA NOVA SEÇÃO */
+.history-section {
+  padding-top: 30px; /* Reduz o espaço preto entre a imagem e o título */
+  margin-top: 0;
+  text-align: center;
+}
+
+/* 2. ESPAÇAMENTO ENTRE O TÍTULO E O PRIMEIRO PARÁGRAFO */
+.history-section .section-title {
+  margin-bottom: 25px; /* Ajuste para aproximar o texto do título */
+}
+
+
+/* SEÇÃO SOBRE */
+.about-section {
+  max-width: 1100px;
+  margin: 0 auto 60px auto;
+  margin-top: 150px;
+  margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+/* 1. TÍTULO PRINCIPAL (NOME DO GRUPO) - Grande e Laranja */
+.main-section-title {
+  color: #ff751f;
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+  display: block; /* Garante que o elemento ocupe a linha inteira */
+}
+
+/* TÍTULO DE SESSÃO EM LARANJA DESTACADO */
+.section-title {
+  color: #ff751f; /* Cor laranja padrão do tema */
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 24px;
+  position: relative;
+  display: inline-block;
+}
