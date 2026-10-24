@@ -43,7 +43,7 @@ html, body {
   text-align: justify;
 }
 
-/* LOGO DO GRUPO NA SEÇÃO SOBRE */
+/* LOGO DO GRUPO NA SEÇÃO SOBRE 
 .about-logo {
   display: block;
   max-width: 120px; /* Controle o tamanho da logo aqui (ex: 100px, 120px, 150px) */
@@ -52,6 +52,7 @@ html, body {
   filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.5)); /* Sombra suave para destacar no fundo escuro */
   transition: transform 0.3s ease;
 }
+*/
 
 /* Efeito suave ao passar o mouse (Opcional) */
 .about-logo:hover {
