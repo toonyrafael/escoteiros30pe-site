@@ -2,11 +2,55 @@ name: Deploy subdomínio
 
 on:
   push:
-    branches: Projeto-extensionista-v2
+    branches:
+      - Projeto-extensionista-v2
+
+concurrency:
+  group: deploy-subdominio
+  cancel-in-progress: false
 
 jobs:
   deploy:
     runs-on: self-hosted
+    env:
+      APP_DIR: /var/www/html2
+      APP_NAME: gitscouts
+      APP_PORT: "3001"
+      BRANCH: Projeto-extensionista-v2
     steps:
-      - name: Atualizar subdomínio
-        run: git -C /var/www/html2 pull origin Projeto-extensionista-v2
+      - name: Garantir bun no PATH
+        run: echo "$HOME/.bun/bin" >> "$GITHUB_PATH"
+
+      - name: Atualizar código
+        run: |
+          set -e
+          git -C "$APP_DIR" fetch origin "$BRANCH"
+          git -C "$APP_DIR" reset --hard "origin/$BRANCH"
+
+      - name: Instalar dependências
+        run: |
+          set -e
+          cd "$APP_DIR"
+          bun install --frozen-lockfile
+
+      - name: Build do Next.js
+        run: |
+          set -e
+          cd "$APP_DIR"
+          bun run build
+
+      - name: Reiniciar aplicação (PM2)
+        run: |
+          set -e
+          cd "$APP_DIR"
+          if pm2 describe "$APP_NAME" > /dev/null 2>&1; then
+            pm2 reload "$APP_NAME" --update-env
+          else
+            PORT="$APP_PORT" pm2 start bun --name "$APP_NAME" --interpreter none -- run start
+          fi
+          pm2 save
+
+      - name: Validar e recarregar Nginx
+        run: |
+          sudo nginx -t
+          sudo systemctl reload nginx
