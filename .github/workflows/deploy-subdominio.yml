@@ -49,8 +49,3 @@ jobs:
             PORT="$APP_PORT" pm2 start bun --name "$APP_NAME" --interpreter none -- run start
           fi
           pm2 save
-
-      - name: Validar e recarregar Nginx
-        run: |
-          sudo nginx -t
-          sudo systemctl reload nginx
