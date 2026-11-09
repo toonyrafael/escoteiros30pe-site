@@ -27,11 +27,9 @@ O projeto é desenvolvido por alunos da **UNIT PE** (Centro Universitário Tirad
 ``` md
 gitscout/
 ├── public/             # assets estáticos
-├── src/
-│   ├── app/            # rotas do Next.js (App Router)
-│   ├── components/     # componentes reutilizáveis de UI
-│   ├── lib/            # utilitários e acesso a dados
-│   └── types/          # tipos TypeScript compartilhados
+├── app/            # rotas do Next.js (App Router)
+├── components/     # componentes reutilizáveis de UI
+├── lib/            # utilitários e acesso a dados
 ├── next.config.ts
 ├── package.json
 ├── tsconfig.json
@@ -63,7 +61,7 @@ bun run start
 
 ## Roadmap
 
-- [ ] Configurar projeto Next.js + TypeScript com Bun
+- [x] Configurar projeto Next.js + TypeScript com Bun
 - [ ] Modelar o banco de dados
 - [ ] Construir o CMS
 - [ ] Construir o site público
