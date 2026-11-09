@@ -72,7 +72,7 @@ export default function Header({
     <header className={headerVariants({ style: style, scrollBehavior: scrollBehavior, scrolled: scrollY >= scrollLimit })}>
       <nav>
         <ul className="flex justify-center items-center gap-9">
-          <li><Icon image={'/Logo.PNG'} href="/inicio" alt="Logo do grupo" height={logoHeight} width={logoWidth} isScrolled={scrollY >= scrollLimit} scrollBehavior={logoScrollBehavior} /></li>
+          <li><Icon image={'/logo.png'} href="/inicio" alt="Logo do grupo" height={logoHeight} width={logoWidth} isScrolled={scrollY >= scrollLimit} scrollBehavior={logoScrollBehavior} /></li>
           <li><HeaderLink href='/inicio'>INÍCIO</HeaderLink></li>
           <li><HeaderLink href='/grupo'>O GRUPO</HeaderLink></li>
           <li><HeaderLink href='/atividades'>ATIVIDADES</HeaderLink></li>
